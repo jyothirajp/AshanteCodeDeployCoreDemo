@@ -7,9 +7,9 @@ phases:
   build:
     commands:
       - echo Build started on `date`
-      - dotnet publish -c release -o C:/temp/WebApp/CodeDeployDemo CodeDeployCoreDemo/CodeDeployCoreDemo.csproj
+      - dotnet publish -c release -o ./build_output CodeDeployCoreDemo/CodeDeployCoreDemo.csproj
 artifacts:
   files:
-    - C:/temp/WebApp/CodeDeployDemo/build_output/**/*
+    - CodeDeployCoreDemo/build_output/**/*
     - scripts/**/*
     - appspec.yml
