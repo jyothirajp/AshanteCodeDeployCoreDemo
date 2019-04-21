@@ -1,8 +1,8 @@
 version: 0.0
 os: windows
 files:
-  - source: CodeDeployCoreDemo\build_output
-    destination: C:\temp\WebApp\CodeDeployDemo
+  - source: https://s3.amazonaws.com/ashantebucket/BuildFiles/CodeDeployCoreDemo/build_output
+    destination: C:\inetpub\wwwroot\CodeDeployDemo
   
 hooks:
   BeforeInstall:
