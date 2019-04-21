@@ -1,1 +1,1 @@
-New-WebApplication -Site "Default Web Site" -Name MusicWorld -PhysicalPath c:\inetpub\wwwroot\CodeDeployDemo -Force
+New-WebApplication -Site "Default Web Site" -Name CodeDeployDemo -PhysicalPath c:\inetpub\wwwroot\CodeDeployDemo -Force
