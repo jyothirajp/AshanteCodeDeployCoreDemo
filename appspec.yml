@@ -1,10 +1,10 @@
 version: 0.0
 os: windows
 files:
-  - source: \
-    destination: C:\temp\WebApp\CodeDeployDemo
+  - source: CodeDeployCoreDemo\build_output
+    destination: C:\inetpub\wwwroot\CodeDeployDemo
   
 hooks:
   BeforeInstall:
-    - location: .\StageArtifact.ps1
-    - location: .\CreateWebSite.ps1
+   - location: .\StageArtifact.ps1
+   - location: .\CreateWebSite.ps1
