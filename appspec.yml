@@ -1,7 +1,7 @@
 version: 0.0
 os: windows
 files:
-  - source: https://s3.amazonaws.com/ashantebucket/BuildFiles/CodeDeployCoreDemo/build_output
+  - source: \
     destination: C:\inetpub\wwwroot\CodeDeployDemo
   
 hooks:
