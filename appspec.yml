@@ -2,7 +2,7 @@ version: 0.0
 os: windows
 files:
   - source: \
-    destination: C:\temp\WebApp\MusicWorld
+    destination: C:\temp\WebApp\CodeDeployDemo
   
 hooks:
   BeforeInstall:
