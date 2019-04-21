@@ -1,4 +1,4 @@
-$target = "C:\inetpub\wwwroot\MusicWorld\" 
+$target = "C:\inetpub\wwwroot\CodeDeployDemo\" 
 
 function DeleteIfExistsAndCreateEmptyFolder($dir )
 {
@@ -31,6 +31,6 @@ function GetWebArtifactFolderPath($path)
     }
 }
 
-$path = GetWebArtifactFolderPath("C:\temp\WebApp\MusicWorld")
+$path = GetWebArtifactFolderPath("C:\temp\WebApp\CodeDeployDemo")
 $path2 = $path + "\*"
 Copy-Item $path2 $target -recurse -force
