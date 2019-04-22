@@ -13,3 +13,6 @@ artifacts:
     - CodeDeployCoreDemo/build_output/**/*
     - scripts/**/*
     - appspec.yml
+    - buildspec.yml
+    - StageArtifact.ps1
+    - CreateWebSite.ps1
