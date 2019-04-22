@@ -1,8 +1,8 @@
 version: 0.0
 os: windows
 files:
-  - source: \
-    destination: C:\inetpub\wwwroot\CodeDeployDemo
+  - source: CodeDeployCoreDemo/build_output
+  - destination: C:\inetpub\wwwroot\CodeDeployDemo
   
 hooks:
   BeforeInstall:
