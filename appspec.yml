@@ -6,6 +6,6 @@ files:
   
 hooks:
   BeforeInstall:
-     - location: \appstop.bat 
+     - location: ./appstop.bat 
    ApplicationStart:
-     - location: \appstart.bat  
+     - location: ./appstart.bat  
