@@ -1,11 +1,15 @@
-version: 0.0
+--- 
+ApplicationStart: 
+  - 
+    location: /appstart.bat
+BeforeInstall: 
+  - 
+    location: /appstop.bat
+files: 
+  - 
+    destination: "C:\\inetpub\\wwwroot\\CodeDeployDemo"
+    source: CodeDeployCoreDemo/build_output
+hooks: ~
 os: windows
-files:
-  - source: CodeDeployCoreDemo/build_output
-    destination: C:\inetpub\wwwroot\CodeDeployDemo
-  
-hooks:
-  BeforeInstall:
-     - location: ./appstop.bat 
-   ApplicationStart:
-     - location: ./appstart.bat  
+version: 0.0
+
