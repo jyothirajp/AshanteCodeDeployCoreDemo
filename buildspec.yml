@@ -16,3 +16,5 @@ artifacts:
     - buildspec.yml
     - StageArtifact.ps1
     - CreateWebSite.ps1
+    - appstop.bat
+    - appstart.bat
