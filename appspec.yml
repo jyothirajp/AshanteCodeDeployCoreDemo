@@ -6,4 +6,6 @@ files:
   
 hooks:
   BeforeInstall:
-   - location: .\CreateWebSite.ps1
+     - location: appstop.bat 
+   ApplicationStart:
+     - location: appstart.bat  
