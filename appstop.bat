@@ -1,3 +1,3 @@
 @echo off
 
-appcmd stop sites "Default Web Site"
+%windir%\system32\inetsrv\appcmd stop sites "Default Web Site"
