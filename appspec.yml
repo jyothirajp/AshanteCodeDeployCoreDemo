@@ -2,9 +2,11 @@
 ApplicationStart: 
   - 
     location: /appstart.bat
+    runas: administrator
 BeforeInstall: 
   - 
     location: /appstop.bat
+    runas: administrator
 files: 
   - 
     destination: "C:\\inetpub\\wwwroot\\CodeDeployDemo"
