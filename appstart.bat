@@ -1,3 +1,3 @@
 @echo off
 
-appcmd start sites "Default Web Site"
+%windir%\system32\inetsrv\appcmd start sites "Default Web Site"
