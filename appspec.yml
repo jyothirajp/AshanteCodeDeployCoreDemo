@@ -1,18 +1,16 @@
---- 
-ApplicationStart: 
-  - 
-    location: /appstart.bat
-    runas: administrator
-    timeout: 30
-BeforeInstall: 
-  - 
-    location: /appstop.bat
-    runas: administrator
-    timeout: 30
+version: 0.0
+os: windows
 files: 
   - 
     destination: "C:\\inetpub\\wwwroot\\CodeDeployDemo"
     source: CodeDeployCoreDemo/build_output
 hooks: ~
-os: windows
-version: 0.0
+BeforeInstall:
+  - 
+    location: /appstop.bat
+    runas: administrator
+ApplicationStart:
+  - 
+    location: /appstart.bat
+    runas: administrator
+
